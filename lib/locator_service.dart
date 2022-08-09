@@ -24,9 +24,6 @@ Future<void> init() async {
       Dio(
         BaseOptions(
           baseUrl: 'https://quizapi.io/api/v1/',
-          connectTimeout: 1500,
-          sendTimeout: 1500,
-          receiveTimeout: 1500,
         ),
       ),
     ),

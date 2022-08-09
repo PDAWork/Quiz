@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:victory/common/url_page.dart';
-import 'package:victory/domain/entities/question_entity.dart';
-import 'package:victory/domain/usescases/get_question.dart';
-import 'package:victory/locator_service.dart';
 
 class Main extends StatefulWidget {
   const Main({Key? key}) : super(key: key);

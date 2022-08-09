@@ -11,7 +11,6 @@ class QuestionCubit extends Cubit<QuestionState> {
   QuestionCubit(this.getQuestion) : super(QuestionInitial());
 
   List<QuestionEntity> test = [];
-
   void init(String category, String difficulty) async {
     test = await getQuestion.getAll(category, difficulty);
     emit(QuestionInitial());

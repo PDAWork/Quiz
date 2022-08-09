@@ -24,6 +24,7 @@ class QuestionRemoteDataSourceImpl extends QuestionRemoteDataSource {
           .map((e) => QuestionModels.fromJson(e))
           .toList();
     } on DioError catch (e) {
+      print(e.message);
       return <QuestionModels>[];
     }
   }

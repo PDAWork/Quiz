@@ -30,7 +30,12 @@ class AppRouter {
         }
       case UrlPage.resultPage:
         {
-          return MaterialPageRoute(builder: (_) => Result());
+          var count = settings.arguments as int;
+          return MaterialPageRoute(
+            builder: (_) => Result(
+              count: count,
+            ),
+          );
         }
     }
 
